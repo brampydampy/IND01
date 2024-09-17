@@ -1,113 +1,24 @@
-# ==== Git Version ====
-git --version
-
-# ==== CONFIGURING GIT ====
+- Configure the Git
 git config --global user.name "username"
-git config --global user.email "email"
 git config user.name
+git config --global user.email "email"
 git config user.email
-
-# If your GitHub and Local Git username are different, it will show a different author for your commits.
-
-# Legends
-U - Untracked
-A - Added
-M - Modified
-D - Deleted
-R - Renamed
-C - Copied
-
-# Initialize Git Repository
+- Initialize a Repository
 git init
-
-# ==== GIT THREE STAGE ====
-# Check the status
+- Check the status of all of the files and folder
 git status
-
-# Adding file to the staging area
+- Git Three Stage Architecture
+1. Working Area
+2. Staging Area
+- Add the files in the staging area
 git add .
-
-# Adding a specific modified file to the staging area
-git add [file_destination]
-
-# Create a commit
+3. Create a commit
 git commit -m "This is the description."
-
-# Fix the last commit message
-git commit --amend -m "This is updated description."
-
-# Open the last commit, modify message or add changes.
-git commit --amend
-
-# Bypass the staging area
-git commit -a -m "This is the description."
-
-# Note: Type `q` to exit the terminal
-# Show the history
-git log
-
-# Shorter history
-git log --oneline
-
-# Restore Deleted File
-git restore [file_name]
-
-# ==== BRANCHING ====
-# Project Development History: Tree
-# Main/Master Branch: Trunk of the tree
-# Allow: Parallel Development Path
-
-# Create a Branch
-git branch [branch-name]
-
-# List all branches
+- Branching
+- List all of the branches
 git branch -a
-
-# Switch to a different branch
-git switch [branch-name] # This may not work for older versions.
+- Create a branch
+git branch [branch-name]
+- Switch to a different branch
 git checkout [branch-name]
-
-# ==== MERGING ====
-# Combines one branch into another.
-
-# Merging feature branch to the main branch
-git merge [branch-name]
-
-# Delete a branch
-git branch -d [branch-name]
-
-# ==== REVERTING ====
-# New commit that undoes the changes introduced by the specified commit. (clean)
-git revert [commit-hash]
-
-# Undo the last commit.
-# Keep the changes in the working directory. (unstaged)
-git reset HEAD~1
-
-# Moves the HEAD pointer to the specified commit. (staged for commit)
-git reset --soft [commit-hash] 
-
-# Moves the HEAD pointer to the specified commit. (unstaged and deleted)
-git reset --hard [commit-hash] 
-
-# -- Reverting to a Specific Commit Safely --
-# Note: Type `q` to exit the terminal
-# Find commit hash
-git log
-git log --online
-
-# Save current state
-git checkout -b current-state
-
-# Checkout specific commit
-git checkout [commit-hash]
-
-# Create a new branch from the specific commit
-git checkout -b new-branch
-
-# Return to the original state
-git checkout current-state
-
-# (Optional) Using reflog to find and return to the previous state
-git reflog
-git checkout [previous-hash]
+git switch [branch-name]
