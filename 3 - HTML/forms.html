@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Forms</title>
+</head>
+<body>
+    <h1>Creating Forms</h1>
+    <form action="">
+        <div id="">
+            <label for="fullname-id">Full Name:</label>
+            <input type="text" name="user-fullname" id="fullname-id" placeholder="Enter your Full Name" required>
+        </div>
+
+        <div>
+            <label for="email-id">Email:</label>
+            <input type="email" name="user-email" id="email-id" placeholder="example@gmail.com" required>
+        </div>
+
+        <div>
+            <label for="password-id">Password:</label>
+            <input type="password" name="user-password" id="password-id" placeholder="****" required>
+        </div>
+
+        <div>
+            <label for="age-id">Age:</label>
+            <input type="number" name="user-age" id="age-id" placeholder="00" required min="18" max="100">
+        </div>
+
+        <!-- Radio Buttons, Checkboxess, Options -->
+        <div>
+            <label for="gender-id">Gender:</label>
+            <select name="user-gender" id="gender-id">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <div>
+            <label for="private-id">Private</label>
+            <input type="radio" name="profile" id="private-id" value="private">
+            <label for="public-id">Public</label>
+            <input type="radio" name="profile" id="public-id" value="public">
+        </div>
+        <div>
+            <label for="option1-id">Option 1</label>
+            <input type="checkbox" name="options1" id="option1-id" value="option1">
+            <label for="option2-id">Option 2</label>
+            <input type="checkbox" name="options2" id="option2-id" value="option2">
+        </div>
+            <button type="reset">Reset</button> <br>
+            <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
