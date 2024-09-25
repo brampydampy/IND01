@@ -1,0 +1,59 @@
+/* Padding */
+.box1 {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+}
+
+/* Padding Shorthand */
+.box2 {
+    /* 1 value: all sides */
+    /* 2 values: (top and bottom)(left and right) */
+    /* 3 values: top (left and right) bottom */
+    /* 4 values: top, right, bottom, left (clockwise) */
+    padding: 10px 20px 30px 40px;
+}
+
+/* Margin */
+.box3 {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+}
+
+/* Margin Shorthand */
+.box4 {
+    /* 1 value: all sides */
+    /* 2 values: (top and bottom)(left and right) */
+    /* 3 values: top (left and right) bottom */
+    /* 4 values: top, right, bottom, left (clockwise) */
+    margin: 10px 20px 30px 40px;
+}
+
+/* Borders */
+.mix-borders {
+    /* 1 value: all sides */
+    /* 2 values: (top and bottom)(left and right) */
+    /* 3 values: top (left and right) bottom */
+    /* 4 values: top, right, bottom, left (clockwise) */
+    background-color: aquamarine;
+    height: 100px; 
+    width: 200px;
+    border-style: solid dashed dotted double;
+    border-width: 6px 8px 10px 12px;
+    border-color: tomato navy purple orange;
+    /* shorthand */
+    border: 10px tomato dashed;
+}
+
+/* Circle Container */
+.circle-container {
+    background-color: bisque;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    text-align: center;
+    color: tomato;
+}

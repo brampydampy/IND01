@@ -1,0 +1,83 @@
+#text-styling {
+    /* Default: Times New Roman */
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Numeric Values - [100 - 950] */
+    font-weight: 400; 
+    
+    /* Normal/Default */
+    font-weight: 900;
+
+    /* Named Values */
+    font-weight: lighter;
+    font-weight: bold;
+    font-weight: bolder;
+
+    font-style: normal;
+    font-style: oblique;
+    font-style: italic;
+
+    text-align: left;
+    text-align: right;
+    text-align: center;
+
+    line-height: normal;
+    line-height: 8; /* Multiplied to the font-size. */
+    line-height: 80%; /* Percentage of the font-size. */
+
+    letter-spacing: normal;
+    letter-spacing: 4px; /* Add spaces */
+    letter-spacing: -2px; /* Remove spaces */
+
+
+}
+
+#text-decoration {
+    text-decoration: overline;
+    text-decoration: line-through;
+    text-decoration: underline overline line-through;
+    text-decoration: none;
+    text-decoration: underline;
+    
+    text-decoration-style: solid;
+    text-decoration-style: dashed;
+    text-decoration-style: dotted;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+    text-decoration-thickness: 4px;
+    text-decoration: line-through dotted 4px violet;
+}
+
+#colors {
+    /* Color Names */
+    color: red;
+    background-color: black;
+    /* rgb(red, green, blue) [0 - 255]*/
+    color: rgb(0, 255, 0);
+    /* rgba(red, green, blue, alpha) [0 - 255] [0 - 1]*/
+    background-color: rgba(0, 0, 255, 0.8);
+    /* hexadecimal */
+    /* #RRGGBB */
+    /* 0 - 9 , A - F */
+    color: #fcbf49;
+    background-color: #003049;
+}
+
+#absolute-unit-px {
+    font-size: 24px;
+}
+
+/* Relative to the parent container */
+#relative-unit-em {
+    font-size: 1em;
+    font-size: 2em;
+    /* font-size: 4em; */
+}
+
+/* Relative to the root element */
+#relative-unit-rem {
+    font-size: 1rem;
+    font-size: 2rem;
+}
+
+

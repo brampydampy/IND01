@@ -1,0 +1,38 @@
+/* Relative Positioning */
+/* relative to its original position. */
+#relative {
+    background-color: aqua;
+    position: relative;
+    /* top, bottom, left and right */
+    top: 100px;
+    left: 60px;
+}
+
+/* Absolute Positioning */
+/* relative to its parent container if it is not set to static.*/
+#absolute {
+    background-color: blanchedalmond;
+    position: absolute;
+    /* top, bottom, left and right */
+    top: 0px;
+    right: 0px;
+}
+
+/* Fixed Positioning */
+/* Relative to the viewport */
+#fixed{
+    background-color: tomato;
+    position: fixed;
+    /* top, bottom, left and right */
+    bottom: 0px;
+    right: 0px;
+}
+
+/* Sticky Positioning */
+#sticky {
+    background-color: magenta;
+    color: white;
+    position: sticky;
+    /* top, bottom, left and right */
+    top: 0px;
+}
